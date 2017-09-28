@@ -1,4 +1,4 @@
-float numCookies = 10000000;
+float numCookies = 0;
 float cps = 0;
 int numGrandmas = 0; 
 int numAutoclickers = 0;
@@ -41,9 +41,7 @@ ArrayList <Sprite> shipments = new ArrayList<Sprite>();
 ArrayList <Sprite> labs = new ArrayList<Sprite>();
 ArrayList <Sprite> portals = new ArrayList<Sprite>();
 ArrayList <Sprite> times = new ArrayList<Sprite>();
-import processing.sound.*;
-SoundFile music;
-SoundFile click;
+
 
 
 void setup() {
@@ -62,7 +60,6 @@ void setup() {
   costGrandma = 100; costFactory = 500; costMine = 2000; costShipment = 7000; 
   costLab = 50000; costPortal = 1000000; costTime = 10000000;
   textFont(font);
-  click = new SoundFile(this, "click.mp3");
 }
 
 void draw() {
